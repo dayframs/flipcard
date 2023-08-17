@@ -6,7 +6,6 @@
     color: rgb(68, 68, 68);
 }
 header {
-    height: 100px;
     position: fixed;
     background-color: white;
     width: 100%;
@@ -15,6 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 .header1 {
     display: flex;
@@ -49,16 +49,16 @@ header img {
     padding: 3px;
     border-radius: 45px;
     vertical-align: middle;
-    cursor: pointer;
-}
+    cursor: pointer;}   */
 body {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
-    background-color: #E5E9ED;
+     background-color: #dbe9f8;
 }
 .section1 {
-    position: relative;
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    background-color: #dbe9f8;
 }
 .section1 h1 {
     text-align: center;
@@ -73,15 +73,27 @@ body {
     font-size: 16px;
 }
 .section2 {
-    padding-bottom: 40px;
+    padding-bottom: 140px;
+    background-color: #dbe9f8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     border: 1px solid red;
 }
 .container {
     height: 500px;
-    width: 1000px;
-    margin: 50px auto;
+    width: 350px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    border: 1px solid red;
+    margin: auto;
 }
 .card {
     height: 100%;
@@ -96,34 +108,30 @@ body {
     cursor: pointer;
     transform: rotateY(180deg);
 }
-.front1 {
-    background-image: url(./rotating_card_thumb.png);
-}
 .back1, .back2, .back3 {
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 5px;
-    padding: 10px;
+    /* top: 5px; */
+    padding: 30px;
     display: grid;
-    grid-template-rows: 20px auto 20px;
-    flex-direction: column;
+    grid-template-rows: 18px auto 18px;
     align-items: center;
     justify-content: center;
     text-align: center;
     transform: rotateY(180deg);
     height: 100%;
     width: 100%;
-    border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
     backface-visibility: hidden;
+    border-radius: 10px;
 }
-.back1, .back2, .back3, header {
+.back1, .back2, .back3, .top {
     border-bottom: 1px solid rgb(128, 128, 128, 0.25);
     color: grey;
     font-size: 14px;
     font-weight: 100;
-    padding: 25px 15px;
-    color: rgb(68, 68, 68, 0.5)
+    /* padding: 20px 15px; */
+    color: rgb(68, 68, 68, 0.5);
 }
 h2 {
     margin-top: 30px;
@@ -156,27 +164,43 @@ p {
     border-top: 1px solid rgba(45, 43, 43, 0.25);
     padding: 25px 5px;
 }
-.front3 {
+.front3a {
     background-image: url(./rotating_card_thumb3.png);
-    background-size: 20px;
-}
-.front1 {
-    background-image: url(./rotating_card_thumb2.png);
-    background-size: 20px;
-}
-.front2 {
-    background-image: url(./rotating_card_thumb.png);
-}
-.front1, .front2, .front3 {
-    background-repeat: no-repeat;
+    height: 170px;
     background-size: cover;
-    background-position: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.front1a {
+    background-image: url(./rotating_card_thumb2.png);
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.front2a {
+    background-image: url(./rotating_card_thumb.png);
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.front1, .front2, .front3 {
     height: 100%;
     width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
     position: absolute;
     backface-visibility: hidden;
+    background-color: white;
+}
+.front1 img, .front2 img, .front3 img  {
+   width: 140px;
+    border-radius: 50%;
+    border: 4px solid white;
+    /* top: -50px;
+    left: 80px; */
+    margin: -50px 80px;
 }
 .fa-brands {
     color: rgb(81, 81, 220);
