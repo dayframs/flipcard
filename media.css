@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+.section2 {
+    padding: 0 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    height: 500px;
+    width: 70%;
+}
+.section1 h1 {
+    font-size: 35px;
+}
+.section1 p {
+    font-size: 14px;
+}
+.header1 {
+    margin-left: 14px;
+}
+.header2 {
+    align-items: center;
+    margin-right: 5px;
+}
+.back footer button {
+    display: inline; 
+    margin-left: 1px;
+    font-size: 14px;
+} 
+.tim {
+    font-size: 15px;
+}
+header .fa-solid {
+    display: flex;
+    font-size: 34px;
+}
+.header2 a, button {
+    display: none;
+}
+}
