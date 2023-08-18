@@ -38,3 +38,16 @@ header .fa-solid {
     display: none;
 }
 }
+@media (max-width: 1000px) and (min-width: 601px)
+{
+    .section2 {
+    padding: 0 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    height: 500px;
+    width: 60%;
+}
+}
