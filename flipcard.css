@@ -135,7 +135,7 @@ body {
     color: rgb(68, 68, 68, 0.5);
 }
 h2 {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 main {
     display: grid;
@@ -151,7 +151,8 @@ p {
 .stat {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     column-gap: 5px;
     line-height: 27px;
     font-size: 14px;
@@ -246,6 +247,7 @@ p {
     margin-left: 0px;
     font-size: 14px;
     background-color: white;
+    cursor: pointer;
 }
 .back .fa-solid {
     margin-left: -50px;
@@ -256,6 +258,7 @@ p {
     perspective: 1000px;
     transform-style: preserve-3d;
     padding: 60px;
+    overflow: hidden;
 }
 .steps h2 {
     color: blue;
